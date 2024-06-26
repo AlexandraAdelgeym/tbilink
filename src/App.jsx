@@ -1,8 +1,9 @@
 import "./app.scss"
+import About from "./components/about/About";
 import Navbar from "./components/navbar/Navbar";
 import Hero from "./components/navbar/hero/Hero";
-import Parallax from "./components/navbar/parallax/Parallax";
 import Links from "./components/navbar/sidebar/links/Links";
+import Questions from "./components/questions/Questions";
 
 const App = () => {
   return <div>
@@ -10,10 +11,12 @@ const App = () => {
       <Navbar />
       <Hero />
       </section>
-    <section id="О нас"><Parallax  type="about"/></section>
-    <section>Parallax</section>
-    <section id="Частые вопросы"><Parallax type="questions"/></section>
-    <section>Portfolio1</section>
+    <section id="О нас">
+      <About  />
+    </section>
+    <section id="Частые вопросы">
+      <Questions/>
+    </section>
     <section id="Контакты">Contact</section>
 
   </div>;
